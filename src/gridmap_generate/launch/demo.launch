@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="gridmap_generate" type="gridmap_generate_node" name="gridmap_generate" output="screen" />
+    <node name="rviz" pkg="rviz" type="rviz" output="log" args="-d $(find gridmap_generate)/config/rviz_vis.rviz" /> 
+</launch>
